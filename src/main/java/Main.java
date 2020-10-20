@@ -27,10 +27,10 @@ public class Main {
     public static void main(String[] args) throws IOException, InterruptedException, ExecutionException  {
         db = FirestoreData.initFirebase();
         teamList = FirestoreData.getTeamName();
-//        Login login = new Login(db, teamList, month, week);
-//        user = login.startMenu();
+        Login login = new Login(db, teamList, month, week);
+        user = login.startMenu();
 //        user = new User(0, "01011111111", "관리자1", "");
-        user = new User(1, "01044444444", "김사원", "개발팀");
+//        user = new User(1, "01044444444", "김사원", "개발팀");
         type = user.getType();
 
         if(type==0) { // admin

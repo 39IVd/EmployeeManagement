@@ -22,7 +22,6 @@ public class EmployeeMenu {
     static Map<Integer, String> dayMap = new HashMap<Integer, String>() {
         {put(1,"월");put(2,"화");put(3,"수");put(4,"목");put(5,"금");}};
     static String[] dayFieldNameList = {"mon_list", "tue_list", "wed_list", "thu_list", "fri_list"};
-//    static List<ArrayList>[] holidayList = new List[5];
     static ArrayList<String>[] holidayList = new ArrayList[5];
     static Boolean[] availableList = new Boolean[5];
     public EmployeeMenu(Employee employee, int month, int week, int myTeamSize, Firestore db) {
@@ -32,7 +31,6 @@ public class EmployeeMenu {
         this.myTeamSize = myTeamSize;
         this.db = db;
     }
-
 
     public void saveWorkHour(int workHour) {
 //        근무시간 DB에 저장
@@ -87,23 +85,10 @@ public class EmployeeMenu {
     }
     public void workHistoryMenu() {
         System.out.println("< "+month+"월 근무 현황 >");
-//        int i=1;
         int workhour_total = 0;
 //        이번 달에 만근했는지 여부 저장
         boolean allWorked = false;
-//        for(Object obj : workhour_list) {
-//            int hour;
-//            if(obj instanceof Integer) {
-//                hour = (Integer)obj;
-//            }
-//            else hour = ((Long)obj).intValue();
-//            System.out.print(i+"주차 : "+hour+"시간 근무 ");
-//            if(hour==35) System.out.print("(만근)");
-//            System.out.println();
-//            i++;
-//            workhour_total += hour;
-//        }
-//        int j=i;
+
         for(int i=1;i<=week;i++) {
             int hour;
             if(i<workhour_list.size()) {
@@ -130,16 +115,6 @@ public class EmployeeMenu {
         else {
             allWorked = workhour_total==week*35;
         }
-//        for (j=i;j<week;j++) {
-//            System.out.println(j+"주차 : 0시간 근무");
-//        }
-//        if(j!=week+1&&j!=5&&!workhour_alreadySaved) {
-//            System.out.println(j+"주차 : 아직 저장하지 않음");
-//            allWorked = workhour_total==(week-1)*35;
-//        }
-//        else {
-//            allWorked = workhour_total==week*35;
-//        }
         System.out.println("사용 가능한 휴가 일 수 : "+holiday_total);
         if(allWorked) {
             System.out.println("이번 달 "+(5-week)+"주 더 만근하면 월차 1일 지급!");
@@ -186,7 +161,6 @@ public class EmployeeMenu {
             if(document.exists()) {
                 for(int i=0;i<5;i++) {
                     holidayList[i] = (ArrayList)document.get(dayFieldNameList[i]);
-//                    if( holidayList[i])
                     if((holidayList[i].size()+1.0)/myTeamSize<0.3) {
                         availableList[i] = true;
                     }
@@ -274,11 +248,7 @@ public class EmployeeMenu {
             if(workhour_list.size()==week) {
                 workhour_alreadySaved = true;
             }
-//            else {
-//                for(int i=workhour_list.size();i<week-1;i++) {
-////                    workhour_list.add();
-//                }
-//            }
+
         }
         catch (InterruptedException ie) { } catch (ExecutionException ee) { }
         if(week==4) {

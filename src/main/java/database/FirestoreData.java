@@ -58,49 +58,4 @@ public class FirestoreData {
         catch (InterruptedException ie) { } catch (ExecutionException ee) { }
         return teamSize;
     }
-    public static void addData() throws IOException, InterruptedException, ExecutionException {
-        DocumentReference docRef = db.collection("Admin").document("01033333333");
-
-        // HashMap을 이용해 put data
-        Map<String, Object> data = new HashMap<>();
-        data.put("phone", "01033333333");
-        data.put("name", "ccc");
-        data.put("password", "3333");
-
-        // asynchronously write data
-        ApiFuture<WriteResult> result = docRef.set(data);
-
-        // result.get() blocks on response
-        System.out.println("Update time : " + result.get().getUpdateTime());
-    }
-    public static void getData() throws InterruptedException, ExecutionException{
-        // asynchronously retrieve all users
-        ApiFuture<QuerySnapshot> query = db.collection("Admin").get();
-
-        // query.get() blocks on response
-        QuerySnapshot querySnapshot = query.get();
-        List<QueryDocumentSnapshot> documents = querySnapshot.getDocuments();
-        for (QueryDocumentSnapshot document : documents) {
-//            document.getId() : document 이름을 read
-            System.out.println("User: " + document.getId());
-//            document.getString() : 특정 field 값을 read
-            System.out.println("phone : " + document.getString("phone"));
-            if (document.contains("password")) {
-                System.out.println("password : " + document.getString("password"));
-            }
-            System.out.println("name : " + document.getString("name"));
-        }
-
-    }
-    public static void updateData() throws InterruptedException, ExecutionException {
-        //asynchronously update doc, create the document if missing
-        Map<String, Object> update = new HashMap<>();
-        update.put("name", "이승주");
-
-        ApiFuture<WriteResult> writeResult =
-                db.collection("Admin")
-                        .document("01011111111")
-                        .set(update, SetOptions.merge());
-        System.out.println("Update time : " + writeResult.get().getUpdateTime());
-    }
 }
