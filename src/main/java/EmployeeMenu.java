@@ -43,6 +43,7 @@ public class EmployeeMenu {
            not_workhour_total += notWorkHour;
         }
         month_docRef.set(update, SetOptions.merge());
+        workhour_alreadySaved = true;
     }
 
     public void saveWorkHourMenu() {
@@ -88,33 +89,27 @@ public class EmployeeMenu {
         int workhour_total = 0;
 //        이번 달에 만근했는지 여부 저장
         boolean allWorked = false;
-
-        for(int i=1;i<=week;i++) {
+        int i=1;
+        for(Object obj : workhour_list) {
             int hour;
-            if(i<workhour_list.size()) {
-                Object obj = workhour_list.get(i);
-                if(obj instanceof Integer) {
-                    hour = (Integer)obj;
-                }
-                else hour = ((Long)obj).intValue();
-                System.out.print(i+"주차 : "+hour+"시간 근무 ");
-                if(hour==35) System.out.print("(만근)");
-                System.out.println();
-                workhour_total += hour;
+            if(obj instanceof Integer) {
+                hour = (Integer)obj;
             }
-            else if(i!=week){
-                System.out.println(i+"주차 : 0시간 근무");
-            }
-            else {
-                System.out.println(i+"주차 : 아직 저장하지 않음");
-            }
+            else hour = ((Long)obj).intValue();
+            System.out.print(i+"주차 : "+hour+"시간 근무 ");
+            if(hour==35) System.out.print("(만근)");
+            System.out.println();
+            workhour_total += hour;
+            i++;
         }
-        if(workhour_list.size()==week) {
+        if(!workhour_alreadySaved) {
+            System.out.println(i+"주차 : 아직 저장하지 않음");
             allWorked = workhour_total==(week-1)*35;
         }
         else {
             allWorked = workhour_total==week*35;
         }
+
         System.out.println("사용 가능한 휴가 일 수 : "+holiday_total);
         if(allWorked) {
             System.out.println("이번 달 "+(5-week)+"주 더 만근하면 월차 1일 지급!");
@@ -248,7 +243,15 @@ public class EmployeeMenu {
             if(workhour_list.size()==week) {
                 workhour_alreadySaved = true;
             }
-
+            else if(workhour_list.size()<week-1){
+//                현재 M월 2주차 이상인 경우 -> 그 전 주차 근무시간을 0으로 초기화하여 저장
+                Map<String, Object> update = new HashMap<>();
+                for(int i=workhour_list.size();i<week-1;i++) {
+                    workhour_list.add(0);
+                }
+                update.put("workhour_list", workhour_list);
+                month_docRef.set(update, SetOptions.merge());
+            }
         }
         catch (InterruptedException ie) { } catch (ExecutionException ee) { }
         if(week==4) {
