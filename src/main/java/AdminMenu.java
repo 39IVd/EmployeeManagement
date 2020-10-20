@@ -41,6 +41,10 @@ public class AdminMenu {
     }
     public void selectEmployeeMenu(String selectedTeam) {
         Map<String, String> nameToPhone =  getEmployeeListInTeam(selectedTeam);
+        if(nameToPhone.isEmpty()) {
+            System.out.println("해당 팀에 직원이 없습니다.\n");
+            return;
+        }
         while (true) {
             System.out.println("\n해고할 직원을 선택해주세요.\n");
             List<String> nameList = new ArrayList<>();
@@ -90,7 +94,8 @@ public class AdminMenu {
             for(int i=1;i<teamList.size()+1;i++) {
                 System.out.println(i+". "+teamList.get(i-1));
             }
-            System.out.print("(메인 메뉴로 돌아가기 : z)\n번호 입력 : ");
+            System.out.println("(메인 메뉴로 돌아가기 : z)");
+            System.out.println("\n번호 입력 : ");
             String teamInput = scan.nextLine().trim();
             if(teamInput.equals("z")||teamInput.equals("Z")) {
                 selectedTeam="";
@@ -109,7 +114,59 @@ public class AdminMenu {
 
         }
     }
+    public void showEmployeeInTeam(String selectedTeam) {
+        colRef = db.collection("Employee");
+        Query query = colRef.whereEqualTo("team", selectedTeam);
+        ApiFuture<QuerySnapshot> querySnapshot = query.get();
+        try {
+            if(querySnapshot.get().getDocuments().isEmpty()) {
+                System.out.println("해당 팀에 직원이 없습니다.\n");
+                return;
+            }
+            System.out.println("\n\n< "+selectedTeam+"의 직원 근무 현황 >");
+            System.out.println("이름\t\t\t전화번호\t\t\t사용가능 휴가일\t\t미달 근무시간");
+            for (DocumentSnapshot document : querySnapshot.get().getDocuments()) {
+                String name, phone, holiday_total, not_workhour_total;
+                name = document.get("name").toString();
+                phone = document.get("phone").toString();
+                holiday_total = document.get("holiday_total").toString();
+                not_workhour_total = document.get("not_workhour_total").toString();
+                System.out.println(name+"\t\t"+phone+"\t\t"+holiday_total+"\t\t\t\t"+not_workhour_total);
+            }
+            System.out.println("\n(아무키나 누르면 메인 메뉴로 돌아갑니다.)\n");
+            scan.nextLine().trim();
 
+        }
+        catch (InterruptedException ie) { } catch (ExecutionException ee) { }
+
+    }
+    public void employeeInfoMenu() {
+        while (true) {
+            System.out.println("팀을 선택해주세요.\n");
+            for(int i=1;i<teamList.size()+1;i++) {
+                System.out.println(i+". "+teamList.get(i-1));
+            }
+            System.out.println("(메인 메뉴로 돌아가기 : z)");
+            System.out.println("\n번호 입력 : ");
+            String teamInput = scan.nextLine().trim();
+            if(teamInput.equals("z")||teamInput.equals("Z")) {
+                selectedTeam="";
+                break;
+            }
+            if(Common.isStringInt(teamInput)) {
+                int selectTeamNum = Integer.parseInt(teamInput);
+                if(selectTeamNum>0&&selectTeamNum<=teamList.size()) {
+                    selectedTeam = teamList.get(selectTeamNum-1);
+                    showEmployeeInTeam(selectedTeam);
+                    return;
+                }
+                else {
+                    System.out.println("\n입력 형식이 잘못되었습니다. 다시 입력해주세요.\n");
+                }
+            }
+
+        }
+    }
     public void showAdminMenu() {
         while (true) {
             System.out.println("<근태관리 프로그램> - 관리자 메뉴\n" +
@@ -123,6 +180,7 @@ public class AdminMenu {
 //            clearScreen();
             switch (num) {
                 case "1":
+                    employeeInfoMenu();
                     break;
                 case "2":
                     selectTeamMenu();

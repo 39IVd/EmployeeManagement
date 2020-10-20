@@ -247,13 +247,15 @@ public class Login {
         userData.put("name", name);
         userData.put("password", password);
         userData.put("team", team);
+        userData.put("holiday_total", holiday_total);
+        userData.put("not_workhour_total", not_workhour_total);
         docRef.set(userData);
 //        회원가입 시 Work Data 초기화
         month_docRef = docRef.collection("Work").document(month+"월");
         Map<String, Object> workData = new HashMap<>();
         workData.put("month",month);
-        workData.put("holiday_total", holiday_total);
-        workData.put("not_workhour_total", not_workhour_total);
+//        workData.put("holiday_total", holiday_total);
+//        workData.put("not_workhour_total", not_workhour_total);
         for(int i=1;i<week;i++) {
             workhour_list.add(0);
         }

@@ -37,12 +37,14 @@ public class EmployeeMenu {
         Map<String, Object> update = new HashMap<>();
         workhour_list.add(workHour);
         update.put("workhour_list", workhour_list);
+        month_docRef.set(update, SetOptions.merge());
+        update = new HashMap<>();
         if(workHour<35) {
             int notWorkHour = 35-workHour;
            update.put("not_workhour_total", not_workhour_total+notWorkHour);
            not_workhour_total += notWorkHour;
         }
-        month_docRef.set(update, SetOptions.merge());
+        docRef.set(update, SetOptions.merge());
         workhour_alreadySaved = true;
     }
 
@@ -145,7 +147,7 @@ public class EmployeeMenu {
         catch (InterruptedException ie) { } catch (ExecutionException ee) { }
         Map<String, Object> employeeUpdate = new HashMap<>();
         employeeUpdate.put("holiday_total", holiday_total);
-        month_docRef.set(employeeUpdate, SetOptions.merge());
+        docRef.set(employeeUpdate, SetOptions.merge());
     }
     public void applyHolidayMenu() {
         Arrays.fill(availableList, false);
@@ -229,31 +231,13 @@ public class EmployeeMenu {
 
         }
     }
+    public void initInfo() {
+        holiday_total = employee.getHoliday_total();
+        not_workhour_total = employee.getNot_workhour_total();
+        workhour_list = employee.getWorkhour_list();
 
-    public void showEmployeeMenu() {
         docRef = db.collection("Employee").document(employee.getPhoneNum());
         month_docRef = docRef.collection("Work").document(month+"월");
-        //      이번 주 근무시간이 이미 저장되어 있는지 확인
-        ApiFuture<DocumentSnapshot> future = month_docRef.get();
-        try {
-            DocumentSnapshot document = future.get();
-            workhour_list = (ArrayList)document.get("workhour_list");
-            holiday_total = Integer.parseInt(document.get("holiday_total").toString());
-            not_workhour_total = Integer.parseInt(document.get("not_workhour_total").toString());
-            if(workhour_list.size()==week) {
-                workhour_alreadySaved = true;
-            }
-            else if(workhour_list.size()<week-1){
-//                현재 M월 2주차 이상인 경우 -> 그 전 주차 근무시간을 0으로 초기화하여 저장
-                Map<String, Object> update = new HashMap<>();
-                for(int i=workhour_list.size();i<week-1;i++) {
-                    workhour_list.add(0);
-                }
-                update.put("workhour_list", workhour_list);
-                month_docRef.set(update, SetOptions.merge());
-            }
-        }
-        catch (InterruptedException ie) { } catch (ExecutionException ee) { }
         if(week==4) {
             nextMonth=month+1;
             nextWeek=1;
@@ -263,7 +247,24 @@ public class EmployeeMenu {
             nextWeek=week+1;
         }
         holiday_docRef = db.collection("Holiday").document(employee.getTeam()).collection(nextMonth+"월").document(nextWeek+"주차");
+        if(workhour_list.size()==week) {
+//            이번 주 근무시간이 이미 저장되어 있는지 확인
+            workhour_alreadySaved = true;
+        }
+        else if(workhour_list.size()<week-1){
+//                현재 M월 2주차 이상인 경우 -> 그 전 주차 근무시간을 0으로 초기화하여 저장
+            Map<String, Object> update = new HashMap<>();
+            for(int i=workhour_list.size();i<week-1;i++) {
+                workhour_list.add(0);
+            }
+            update.put("workhour_list", workhour_list);
+            month_docRef.set(update, SetOptions.merge());
+            employee.setWorkhour_list(workhour_list);
+        }
+    }
 
+    public void showEmployeeMenu() {
+        initInfo();
         while (true) {
             System.out.println("<근태관리 프로그램> - 직원 메뉴\n" +
                     "이름 : "+employee.getName()+" / "+employee.getTeam()+"\n" +
