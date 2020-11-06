@@ -6,26 +6,24 @@ import models.Employee;
 import models.User;
 
 import java.io.IOException;
+import java.net.URISyntaxException;
+import java.time.LocalDateTime;
 import java.util.*;
 import java.util.concurrent.ExecutionException;
 
 
 public class Main {
-    static Scanner scan = new Scanner(System.in);
-//    static String name="aaa", phoneNum ="01011111111", team="개발팀";
-    static String name="", phoneNum ="", team = "";
     static User user;
     static Admin admin;
     static Employee employee;
     static int type = -1;
-//    static String projectId = "employeemanagement-b0424";
     static Firestore db;
     static List<String> teamList = new ArrayList<>();
     static int myTeamSize;
     static int month = 10, week = 3;
 
-
-    public static void main(String[] args) throws IOException, InterruptedException, ExecutionException  {
+    public static void main(String[] args) throws IOException, URISyntaxException {
+        System.out.println(LocalDateTime.now());
         db = FirestoreData.initFirebase();
         teamList = FirestoreData.getTeamName();
         Login login = new Login(db, teamList, month, week);

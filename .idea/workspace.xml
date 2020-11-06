@@ -2,11 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bcba5ee-a0ff-4ad5-99d7-6d7b9a1afeae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/EmployeeManagement-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/em_firebase.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/AdminMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/AdminMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/EmployeeMenu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/EmployeeMenu$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/EmployeeMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/EmployeeMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/database/FirestoreData.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/database/FirestoreData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/models/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/models/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/models/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/models/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/utils/Common.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/utils/Common.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/AdminMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AdminMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/EmployeeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmployeeMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/database/FirestoreData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/FirestoreData.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -27,13 +69,30 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="EmployeeManagement" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/database/FirestoreData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="33" column="15" lean-forward="true" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+            <state relative-caret-position="246">
+              <caret line="31" column="79" selection-start-line="29" selection-start-column="6" selection-end-line="31" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,11 +100,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/EmployeeMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="617">
-              <caret line="116" column="21" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="165">
+                <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -53,38 +115,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/AdminMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="154" column="13" lean-forward="true" selection-start-line="154" selection-start-column="13" selection-end-line="154" selection-end-column="13" />
+            <state relative-caret-position="156">
+              <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Login.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="250" column="40" selection-start-line="250" selection-start-column="22" selection-end-line="250" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/database/FirestoreData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="198">
+              <caret line="24" column="81" selection-start-line="24" selection-start-column="81" selection-end-line="24" selection-end-column="81" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/models/Admin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -124,12 +168,12 @@
       <find>saveWorkHourMenu</find>
       <find>saveWorkHour</find>
       <find>not_workhour_total</find>
-      <find>addEmployee</find>
       <find>saveworkhour</find>
-      <find>아무키</find>
       <find>getEmployeeListInTeam</find>
       <find>selectEmployeeMenu</find>
+      <find>addEmployee</find>
       <find>selectTeamMenu</find>
+      <find>아무키</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -141,23 +185,23 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/database/Data.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Admin.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/database/FirestoreData.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Employee.java" />
-        <option value="$PROJECT_DIR$/src/main/java/EmployeeMenu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/AdminMenu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/EmployeeMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/database/FirestoreData.java" />
+        <option value="$PROJECT_DIR$/README.txt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="216" />
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1320" />
+    <option name="width" value="1584" />
     <option name="height" value="863" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -230,17 +274,20 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/java/database" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$/src/main/java/database" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -255,7 +302,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="EmployeeManagement.main" />
@@ -263,8 +310,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EmployeeManagement-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/build/libs/EmployeeManagement-1.0-SNAPSHOT.jar" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR Application.EmployeeManagement-1.0-SNAPSHOT.jar" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -286,12 +338,21 @@
       <workItem from="1602744657020" duration="6194000" />
       <workItem from="1602826083151" duration="1694000" />
       <workItem from="1602827797869" duration="1943000" />
-      <workItem from="1603181345297" duration="6186000" />
+      <workItem from="1603181345297" duration="7282000" />
+      <workItem from="1603211637015" duration="1492000" />
+      <workItem from="1603632571684" duration="1000" />
+      <workItem from="1603885163667" duration="1213000" />
+      <workItem from="1603886457515" duration="1055000" />
+      <workItem from="1603887654172" duration="1490000" />
+      <workItem from="1603889214522" duration="10000" />
+      <workItem from="1603956760117" duration="1164000" />
+      <workItem from="1603957967290" duration="5525000" />
+      <workItem from="1604675132975" duration="4649000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41009000" />
+    <option name="totallyTimeSpent" value="58704000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -303,10 +364,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1536" height="863" extended-state="6" />
+    <frame x="0" y="23" width="1584" height="863" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14993307" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16277562" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -314,14 +375,14 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26848248" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3294423" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26718548" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994812" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3294423" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.3294423" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3294423" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32814527" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="ConsoleMavenPlugin" order="10" weight="0.3294423" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -333,34 +394,27 @@
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Gradle" order="6" />
+      <window_info anchor="right" id="Gradle" order="6" sideWeight="0.4980695" visible="true" weight="0.19584955" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Coverage" order="10" sideWeight="0.5019305" side_tool="true" visible="true" weight="0.2021419" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/EmployeeManagement$.ic" NAME=" Coverage Results" MODIFIED="1603961628388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/employeemanagement-b0424-firebase-adminsdk-v2e5h-6730f2119a.json" />
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/gradlew">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="380">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="e#467#468#0" expanded="true" />
             <element signature="e#494#495#0" expanded="true" />
@@ -368,81 +422,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Common.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Admin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="250" column="40" selection-start-line="250" selection-start-column="22" selection-end-line="250" selection-end-column="40" />
+        <state relative-caret-position="165">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding>
-            <element signature="e#259#260#0" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#811#812#0" expanded="true" />
-            <element signature="e#847#848#0" expanded="true" />
-            <element signature="e#889#890#0" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
-            <element signature="e#976#977#0" expanded="true" />
-            <element signature="e#1012#1013#0" expanded="true" />
-            <element signature="e#1067#1068#0" expanded="true" />
-            <element signature="e#1117#1118#0" expanded="true" />
-            <element signature="e#1182#1183#0" expanded="true" />
-            <element signature="e#1242#1243#0" expanded="true" />
-            <element signature="e#1306#1307#0" expanded="true" />
-            <element signature="e#1356#1357#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/FirestoreData.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Common.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Admin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        <state relative-caret-position="345">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/EmployeeMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="116" column="21" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
+        <state relative-caret-position="105">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="283" column="8" selection-start-line="283" selection-start-column="8" selection-end-line="283" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.classpath">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/main/database/FirestoreData.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="24" column="81" selection-start-line="24" selection-start-column="81" selection-end-line="24" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/employeemanagement-b0424-firebase-adminsdk-v2e5h-6730f2119a.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AdminMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="154" column="13" lean-forward="true" selection-start-line="154" selection-start-column="13" selection-end-line="154" selection-end-column="13" />
+        <state relative-caret-position="156">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+    <entry file="file://$PROJECT_DIR$/employeemanagement-b0424-firebase-adminsdk-v2e5h-6730f2119a.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="33" column="15" lean-forward="true" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+        <state relative-caret-position="150">
+          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/em_firebase.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/FirestoreData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="31" column="79" selection-start-line="29" selection-start-column="6" selection-end-line="31" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="165">
+            <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -463,6 +553,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -509,6 +600,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Gradle: com.fasterxml.jackson.core:jackson-core:2.11.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

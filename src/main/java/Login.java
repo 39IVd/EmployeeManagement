@@ -240,7 +240,6 @@ public class Login {
     }
     public static void addEmployee() {
         docRef = db.collection("Employee").document(phoneNum);
-
         // HashMap을 이용해 put data
         Map<String, Object> userData = new HashMap<>();
         userData.put("phone", phoneNum);
@@ -254,8 +253,6 @@ public class Login {
         month_docRef = docRef.collection("Work").document(month+"월");
         Map<String, Object> workData = new HashMap<>();
         workData.put("month",month);
-//        workData.put("holiday_total", holiday_total);
-//        workData.put("not_workhour_total", not_workhour_total);
         for(int i=1;i<week;i++) {
             workhour_list.add(0);
         }

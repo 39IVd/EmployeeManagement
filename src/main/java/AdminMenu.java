@@ -12,7 +12,6 @@ public class AdminMenu {
     static int month, week;
     static List<String> teamList = new ArrayList<>();
     static CollectionReference colRef;
-    static DocumentReference docRef;
     static Firestore db;
     static String selectedTeam="";
     public AdminMenu(Admin admin, int month, int week, List teamList, Firestore db) {

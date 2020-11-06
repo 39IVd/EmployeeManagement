@@ -11,8 +11,6 @@ public class EmployeeMenu {
     Employee employee;
     static int month, week; // 이번 주 월, 주차
     static int nextMonth, nextWeek; // 다음 주 월, 주차
-    static List<String> teamList = new ArrayList<>();
-    static CollectionReference employeeColRef;
     static DocumentReference docRef, month_docRef, holiday_docRef;
     static Firestore db;
     static int holiday_total = 5, not_workhour_total = 0;
